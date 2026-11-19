@@ -1,0 +1,30 @@
+The Butterfly Effect
+====================
+
+Project Management:
+* lspacenl@gmail.com   - Peter van Ginneken
+
+Development:
+* klaas@opentux.nl - Klaas van Gend
+* many contributors submitted a few fixes
+The Butterfly Effect is a happy user of the Box2D and QT libraries.
+
+Graphics:
+* many graphics were borrowed or adapted from the web.
+  In all directories that contain graphics,  there should be a README listing the origins.
+  Note that many images are sourced from openclipart.org and are under a PD license.
+  Some images (e.g. Pingus) are under a GPLv3+ license.
+
+Levels:
+* most levels were implemented by Klaas van Gend
+  - but many contain ideas coined by others - thank you!
+  - almost all levels have seen playtesting by a lot of volunteers - thank you!
+
+Internationalization or "i18n":
+* The original English and Dutch texts by Peter and Klaas
+* Translation to other languages is now done through "Transifex".
+  This project was started and managed by Alexey Loginov. See
+  https://www.transifex.com/Magic/thebutterflyeffect/
+
+
+

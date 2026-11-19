@@ -1,0 +1,565 @@
+=== imagery/icons/README
+All images in this folder (Action*.*, Icon*.svg, Status*.svg, Proxy*.svg and ToRight.*) are original work for The Butterfly Effect, 
+except:
+  Status4F, which was drawn by 'Wuzzy2' in 2016
+except:
+  IconSetPhone, which contains an icon drawn by "taber", see http://www.openclipart.org/people/taber/taber_No_Cell_Phones_Allowed.svg
+except:
+  StatusWon, which contains "thumbs-up-right" drawn by "SavanaPrice", see https://openclipart.org/detail/192852/thumbs-up
+  (C) Klaas van Gend 2009,2010,2011,2012, 2016
+except:
+  ActionGoals, image derived from "Wavy checkerd flag" by J_Alves, see https://openclipart.org/detail/62779/wavy-checkered-flag
+licensed as Public Domain.
+
+
+=== imagery/illustrations/README
+filenames:  
+  jbruce_butterfly_(papilio_philenor)_-_side.svg
+  jbruce_butterfly_(papilio_philenor)_-_top.svg
+  jbruce_butterfly_(papilio_turnus)_side_view.svg
+  jbruce_butterfly_(papilio_turnus)_top_view.svg
+author:    "jbruce"
+license:   PD (Public Domain)
+source:    http://openclipart.org/media/people/jbruce/papilio
+
+filename:
+  jbruce_butterfly_(papilio_philenor)_-_top_modified_for_icon.svg
+  tbe-icon.png, tbe-icon.ico
+author:    "jbruce", modified by Klaas van Gend
+this is the above jbruce_butterfly_(papilio_philenor)_-_top.svg file, rotated and exported in 32x32 / 128x128 pixels
+
+filename:
+  thank-you-stone.svg
+  thank-you-stone.png
+author:	   Klaas van Gend
+this is based on the veined_marble_2052058.JPGA by Mayang Murni Adnin (in the textures directory)
+
+filename:
+  title-page.svg
+  congrat-death-mesage.svg
+author:    Klaas van Gend, jbruce
+this is based on the above jbruce top files plus some basic artwork by jbruce.
+
+
+=== imagery/src/Balloon/README
+* AJ_Party_Balloons.svg
+AUTHOR:  AJ Ashton
+LICENSE: PD
+SOURCE: http://www.openclipart.org/detail/17920
+
+* Balloon.svg BalloonRest.svg
+AUTHOR:  remix of above AJ_Party_Balloons.svg by Klaas van Gend
+LICENSE: PD
+
+* BalloonRed.svg BalloonYellow.svg BalloonRestRed.svg BalloonRestYellow.svg
+AUTHOR:  remix of above AJ_Party_Balloons.svg by Wuzzy
+LICENSE: WTFPL
+
+* BalloonPoof.svg BedOfNails.svg Cactus.svg CircularSaw.svg
+AUTHOR: Klaas van Gend
+LICENSE: PD 
+
+* r1024_eggs.svg
+AUTHOR: r1024
+LICENSE: PD
+SOURCE: http://www.openclipart.org/detail/20158
+
+* egg_1.svg egg_2.svg egg_3.svg
+AUTHOR: Klaas van Gend simplified the above r1024_eggs.svg to fit one frame each.
+LICENSE: PD
+
+* yellow_bird.svg
+AUTHOR: Klaas van Gend
+SOURCE: Original work for The Butterfly Effect
+LICENSE: PD
+
+=== imagery/src/Balls/README
+filename:  Chrisdesign_tennis_ball.svg
+author:    "Chrisdesign"
+license:   PD 
+source:    http://openclipart.org/media/files/Chrisdesign/11128
+
+filename:  TennisBall.svg  /  .png
+author:    Klaas van Gend, based on the above image from Chrisdesign
+license:   PD
+source:    derived from the above Chrisdesign_tennis_ball.svg by removing the shadow on the ground
+
+filename:  11949867891346735125volley-ball_andrea_bianc_01.svg 
+author:    "OCAL pseudo account" - Andrea Bianchini
+license:   PD (Public Domain)
+source:    http://www.clker.com/clipart-4566.html 
+
+filename:  VolleyBall.svg 
+author:    Klaas van Gend, based on above image from Andrea Bianchini
+license:   PD (Public Domain)
+
+filename:  maxim2_soccerball.svg
+author:    "maxim2"
+license:   PD (Public Domain)
+source:    http://openclipart.org/media/files/maxim2/14837
+
+filename:  SoccerBall.svg  / .png
+author:    Klaas van Gend, based on above image from maxim2
+license:   PD (Public Domain)
+
+filename:  PetanqueBoule.svg
+author:    Klaas van Gend, original work for The Butterfly Effect
+license:   PD (Public Domain)
+
+filename:  coconut.svg, round_coconut.svg
+author:    Klaas van Gend, original work for The Butterfly Effect
+license:   PD (Public Domain)
+
+filename:  steam-wheel.svg
+author:    Klaas van Gend, original work for The Butterfly Effect
+license:   PD (Public Domain)
+
+filename:  SABROG_Glass_Blue_Ball.svg
+author:    "sabrog"
+license:   PD (Public Domain)
+source:    http://openclipart.org/media/files/SABROG/7098
+
+filename:  blue_bike_wheel.svg
+author:    Klaas van Gend
+license:   PD (Public Domain)
+Remix of Anonymous_Blue_bike.svg (RectObjects) to fit what's needed
+for TBE and make sure that it renders as expected in Qt's SVG engine.
+
+filename:  wood-pin.svg
+filename:  guardrailring.svg
+author:    Wuzzy, original work for The Butterfly Effect
+license:   WTFPL
+
+=== imagery/src/BowlingBall/README
+filename:  BowlingBall.svg 
+filename:  BowlingBall.png
+author:    Klaas van Gend
+license:   Creative Commons Share Alike 3.0
+source:    original work for The Butterfly Effect, using below texture
+
+filename:  red_marble.jpg
+author:    Kathy_Wroblewski
+license:   ???
+source:    http://www.customartfinishes.com/portfolio/index.php?path=techniques-samples%2Fmarbles-samples/
+
+=== imagery/src/BowlingPin/README
+filename:  Jurgentje_Bowling_pin.svg
+author:    "Jurgentje"
+license:   PD (Public Domain)
+source:    http://openclipart.org/media/files/Jurgentje/10678
+
+filename:  BowlingPin.svg
+author:    Klaas van Gend, based on above image from Jurgentje
+license:   PD (Public Domain)
+
+filename:  Milkman666_Cone_svg_1.svg
+author:    originally drawn by Milkman666 and published on openclipart.org:
+license:   CC-0
+source:    https://openclipart.org/detail/10911/cone.svg-by-milkman666-10911
+
+
+=== imagery/src/Butterfly/README
+filename:  Butterfly*.svg  (* = (nothing)/Open/HalfOpen/Still)
+author:    Klaas van Gend
+license:   Creative Commons Share Alike 3.0
+source:    original work for The Butterfly Effect - Butterfly.svg is the master of the other 3.
+
+
+=== imagery/src/ColaMintBottle/README
+filename:  jonata_PET.svg
+author:    "Jonata"
+license:   PD (Public Domain)
+source:    http://openclipart.org/media/files/jonata/3952
+
+filename:  modified_PET.svg
+author:    Klaas van Gend, based on above jonata_PET.svg
+license:   CC-SA-3.0
+note:	   the image now contains named layers and invisible align marks to allow
+           individual rendering of all layers whilst keeping the same scaling.
+
+filename:  cola_PET.svg
+author:    Klaas van Gend, based on above modified_PET.svg
+license:   CC-SA-3.0
+note:	   modified outline and colors to fit diet coke bottle better
+
+filename:  ColaBottle*.svg (*=Normal;Foaming;Blowing;Empty)
+author:    Klaas van Gend, based on above cola_PET.svg
+license:   CC-SA-3.0
+note:	   Derived+Simplified from cola_PET.svg: 4 images for the different stages
+
+filename:  ColaSplatter.svg 
+author:    Klaas van Gend
+license:   Creative Commons Share Alike 3.0
+source:    original work for The Butterfly Effect
+
+filename:  tuxkart.svg
+author:    Klass van Gend and Moini
+license:   PD (Public Domain)
+based on:  https://openclipart.org/detail/105607/monster-truck-by-netalloy
+
+
+=== imagery/src/Domino/README
+DominoBlue.svg  
+DominoGreen.svg  
+DominoRed.svg  
+Domino-Stone-Red.svg
+
+SOURCE: All are original work by Klaas van Gend for the Butterfly Effect in 2009.
+LICENSE: Public Domain
+
+=== imagery/src/Glue/README
+* GlueBlob.svg
+SOURCE: Original work by Klaas van Gend for the Butterfly Effect in 2011.
+LICENSE: Public Domain
+
+=== imagery/src/NotFound/README
+filename:  BigCross.svg CustomBall.svg NotFound.svg NotFound.png PolyObject.svg RectObject.svg Scenery.svg Empty.svg
+author:    Klaas van Gend
+license:   Public Domain
+source:    original work for The Butterfly Effect
+
+=== imagery/src/Pingus/README
+filenames:  pingus.png, pingussleeper.png, pinguswalkleft.png, pinguswalkright.png
+author(s): Alan Tennent, Craig Timpany, Erik Søe Sørensen, Ingo Ruhnke, Jarno Elonen, Joel Fauche, Mark Collinson, Michael Mestre, Stefan Stiasny, Tom Flavel
+license:   GPLv3 or later 
+source:    Created from various files at https://github.com/Pingus/pingus/tree/master/data/images/pingus/player0" 
+
+filename: opendoor.svg
+author:   'dbdeveloper'
+license:  Public Domain
+source:   modified version of push.svg at https://openclipart.org/detail/63307/sign-push-the-door
+
+
+
+=== imagery/src/PolyObjects/README
+* Skyhook.svg
+* Weight.svg
+* QuarterArc.svg
+* QuarterArc80.svg
+AUTHOR:  Klaas van Gend 
+LICENSE: PD
+Original graphics for The Butterfly Effect
+
+* QuarterArc.png
+* QuarterArc80.png
+AUTHOR:  Klaas van Gend 
+LICENSE: PD
+Original graphics for The Butterfly Effect, based on the above QuarterArc.svg/QuarterArc80.svg combined with big_used_wood_bar.jpg .
+
+* rotating_bar.svg
+* CardboardBox.svg
+AUTHOR:  Wuzzy
+LICENSE: WTFPL
+
+=== imagery/src/PostIt/README
+filename:  PostIt.svg 
+author:    Klaas van Gend
+license:   Creative Commons Share Alike 3.0
+source:    original work for The Butterfly Effect
+
+filename:  PostItBackground.svg 
+author:    Klaas van Gend
+license:   Public Domain
+source:    original work for The Butterfly Effect
+
+=== imagery/src/Ramp/README
+filename:  LeftRamp.svg, RightRamp.svg 
+author:    Klaas van Gend
+license:   Creative Commons Share Alike 3.0
+source:    original work for The Butterfly Effect
+
+=== imagery/src/RatBread/README
+* Comparison_Black_Rat_Brown_Rat_EN.svg
+AUTHOR:  Karim-Pierre Maalej and "Sponk"
+SOURCE:  http://en.wikipedia.org/wiki/File:Comparison_Black_Rat_Brown_Rat_EN.svg
+LICENSE: Creative Commons Attribution-Share Alike 3.0 Unported
+
+* Rat_Walking1R
+* Rat_Walking2R
+* Rat_Walking3R
+* Rat_Sleeping1R
+* Rat_Sleeping2R
+Based on the above image by Maalej and Sponk
+"Remixed" by Klaas van Gend
+LICENSE: Creative Commons Attribution-Share Alike 3.0 Unported
+
+
+=== imagery/src/RectObjects/README
+* basket.svg
+* brass-pin.svg
+* black.svg
+* boulder.svg
+* card-back-blue.svg
+* card-back-red.svg
+* carpenters-rule.svg      *
+* circus-stripe.svg
+* cola_crate.svg           *
+* DarkerBlue.svg
+* DarkerGreen.svg
+* DarkerRed.svg
+* driver-1m.svg
+* driver-2m.svg
+* goal-scenery.svg         *
+* hammer.svg
+* i-beam.svg               *
+* right-side-frame-003.svg
+* sand.svg
+* spring20.svg
+* steam-wheel.svg          *
+* the-sun.svg
+* White-to-green.svg
+* Yellow-to-brown.svg
+
+AUTHOR: Klaas van Gend
+License: PD
+Original graphics for The Butterfly Effect
+The images marked with an asterisk are uploaded to www.openclipart.org
+
+* nicubunu_White_deck_2_of_spades.svg
+* nicubunu_White_deck_6_of_diamonds.svg
+* nicubunu_White_deck_10_of_hearts.svg
+* nicubunu_White_deck_Jack_of_hearts.svg
+* nicubunu_White_deck_Queen_of_spades.svg
+AUTHOR: nicubunu
+SOURCE: www.openclipart.org
+License: PD
+
+* agone_chain.svg
+* agone_chain_rot.svg
+AUTHOR:  "agone"
+LICENSE: PD
+SOURCE:  http://openclipart.org/media/files/agone/11265
+
+* Anonymous_daffodil.svg
+SOURCE:  http://openclipart.org/media/files/Anonymous/12393
+LICENSE: PD
+
+* Anonymous_daffodil_klaas.svg
+Adapted by Klaas van Gend: mirrored, added leaves.
+
+* Anonymous_Blue_bike.svg
+AUTHOR:  Franck Doucet
+LICENSE: PD
+SOURCE:  Blue bicycle (originally named "vtt_02")
+         http://www.openclipart.org/detail/23878
+
+* blue_bike_frame.svg
+AUTHOR:  Klaas van Gend
+LICENSE: PD
+Remix of the above Anonymous_Blue_bike to fit what's needed for TBE and
+make sure that it renders as expected in Qt's SVG engine.
+
+* rg1024_Grass_texture.svg
+http://openclipart.org/people/rg1024/rg1024_Grass_texture.svg
+As with all images from openclipart.org,  the originals and the derived works
+are in the Public Domain.
+
+* penguinmigrating.svg
+originally drawn by Moini and published on openclipart.org:
+https://openclipart.org/people/Moini/penguinmigrating.svg
+
+* penguin_gliding.svg
+modification of penguinmigrating.svg by Klaas van Gend, march 2014.
+
+* Bell.svg
+SOURCE: http://openclipart.org/detail/96343/christmas-l9-by-inky2010
+LICENSE: CC-0
+Remixed by Klaas van Gend in 2012
+
+* Milk_Carton.svg, milk.png
+SOURCE: http://openclipart.org/detail/23491/tango-style-milk-carton-by-rugby471
+LICENSE: CC-0
+Remixed by Klaas van Gend in 2012
+
+* flat_blue_giftbox.svg
+SOURCE: https://openclipart.org/detail/240382/flat-gift-box-gradientbased
+LICENSE: WTFPL
+AUTHORS: openclipart.org users: elkbuntu, monsterbraingames, Wuzzy
+
+
+=== imagery/src/Scenery/README
+clouds.svg
+   author:   Klaas van Gend, based on an image by mokush
+   source:   https://openclipart.org/detail/25281/cute-cartoon-clouds-with-stars
+   license:  public domain 
+   adjusted to match the Pingus levels by Klaas van Gend
+
+SpidersWeb.svg 
+  author:   Klaas van Gend, based on an image by "nayrhcrel"
+  source:   https://openclipart.org/detail/2122/ragno-with-a-half-web 
+  license:  public domain 
+
+scaffolding-clamp.svg
+scaffolding-mount.svg
+scaffolding-vertical-tube.svg
+toychest.svg
+prizes.svg
+cloud-door.svg
+xray2000.svg
+carpenters-rule.svg
+   author:  Klaas van Gend
+   license: Public Domain
+   Original graphics for The Butterfly Effect
+
+wood_crate_flat.svg
+   author:  Klaas van Gend, based on an image by "J_Alves"
+   license: Public Domain
+   source:  http://www.openclipart.org/detail/60595
+
+wood_crate_square.svg
+   author:  Klaas van Gend, based on an image by "Erulisseuiin"
+   license: Public Domain
+   source:  http://www.openclipart.org/detail/62833
+
+dream-of-hovering.svg
+   author:  Klaas van Gend
+   license: Public Domain
+   source:  mostly original work, uses "vlodco_zotov_CELL_PHONE_MIESENS.svg" by vlodco_zotov (http://www.openclipart.org/detail/2028)
+
+stk-logo.png
+   supertuxkart logo taken from http://stkaddons.net/
+   presumed to be under a suitably free license
+
+picnic-1-background.svg
+   Remixed by Klaas van Gend in 2012
+   sources:
+   - http://openclipart.org/detail/80773/tea-cup-by-notklaatu
+   - http://openclipart.org/detail/169445/teapot-by-hatalar205
+   license: CC-0
+
+guardrail.svg
+   author: Wuzzy
+   license: WTFPL
+   source: original work for TBE
+
+=== imagery/src/SeeSaw/README
+* seesaw-tall.svg
+* seesaw-tiny.svg
+SOURCE: Original work by Klaas van Gend for the Butterfly Effect in 2016.
+LICENSE: Public Domain
+
+=== imagery/src/StopWatch/README
+stop-watch.svg
+stop-watch-broken.svg
+
+SOURCE: All are original work by Klaas van Gend for the Butterfly Effect
+DATE:   Dec 5, 2009
+LICENSE: Public Domain
+Also available at www.openclipart.org
+
+StartStopWatch.svg
+StartStopWatchHand.svg
+StartStopWatchBroken.svg
+These versions are derived from the above by Klaas van Gend.
+=== imagery/src/TriggerExplosion/README
+* vlodco_zotov_CELL_PHONE_MIESENS.svg
+AUTHOR:   vlodco_zotov
+LICENSE: 
+SOURCE:   http://www.openclipart.org/detail/2028
+
+* DetonatorBox.svg          (base image)
+* DetonatorBoxActivated.svg (derived)
+* DetonatorBoxRinging.svg   (derived)
+* DetonatorBoxDone.svg      (derived)
+* DetonatorBoxHandle.svg    (derived)
+AUTHOR:  Klaas van Gend 
+LICENSE: PD
+Original graphics for The Butterfly Effect
+uses the above cell phone
+
+* Dynamite.svg          (base image)
+* DynamiteActive.svg    (derived)
+* DynamiteRinging.svg   (derived)
+* DynamiteBoom.svg      (derived)
+AUTHOR:  Klaas van Gend 
+LICENSE: PD
+Original graphics for The Butterfly Effect
+uses the above cell phone
+
+* danger-sign-explosion.svg
+AUTHOR:  Klaas van Gend 
+LICENSE: PD
+Original graphics for The Butterfly Effect
+
+=== imagery/src/Wedge/README
+filename:  styrofoam-left.png styrofoam-right.png 
+author:    Klaas van Gend
+license:   public domain
+source:    original work for The Butterfly Effect, using the 2009-03-17-styrofoam_texture.jpg texture
+           which has a "everything is 100% FREE" license. See the appropriate section for more info.
+
+filename:  birch-wedge-left.svg birch-wedge-right.svg
+author:    Wuzzy
+license:   WTFPL
+source:    Based on birch-bar.svg in textures/
+
+filename:  usedwood-wedge-left.png usedwood-wedge-right.png
+author:    Wuzzy
+license:   WTFPL
+source:    original work for The Butterfly Effect, using the big_used_wood_bar.jpg
+           texture which was Public Domain.
+
+
+=== imagery/textures/README
+filename:  used_wood_bar.png
+author:    Peter van Ginneken (photo), Klaas van Gend (texturization)
+license:   PD (Public Domain)
+source:    n/a - original work for The Butterfly Effect
+
+filename:  big_used_wood_bar.jpg
+author:    Klaas van Gend (texturization), based on above used_wood_bar.png
+license:   PD (Public Domain)
+source:    n/a - original work for The Butterfly Effect
+
+filenames: 2009-03-17-styrofoam_texture.jpg
+           2009-05-14-oldbrick_1000texture_1.jpg
+           basket_weave_1.jpg
+author:    "Samurai Squirrel"
+license:   the following license was retrieved from http://www.samuraisquirrel.com/Textures/Textures.html on Aug 30, 2009:
+"Welcome!
+This is an online repository of textures for 2D and 3D artists. Everything  is FREE! Thats right 100% FREE. No catch, no membership fees, no registration required. All images have royalty free rights for both personal and commercial use.
+Feel free to take as much and as often as you like. As we grow we hope to offer more and more items; like 3D models, stock photography, tutorials and more, so please check back often. I only ask that if you like what you find here, please pass along the website information so others can benefit too. If you do use something drop us a email or send us a copy for the gallery section - we’re always interest in seeing what cool things people do with this stuff."
+source:    http://www.samuraisquirrel.com/
+
+filenames: oldbrick.png
+           styrofoam.png
+derived from the above textures from Samurai Squirrel.
+
+
+filename   birch_bar.svg
+author:    rdevries, modified by Wuzzy
+license:   WTFPL
+source:    https://openclipart.org/detail/162781/wooden-plank-light
+
+
+filenames: chickenwire-texture.svg
+author:    Klaas van Gend
+license:   PD (public domain)
+source:    n/a - original work for The Butterfly Effect
+
+
+filename:  veined_marble_2052058.JPG
+author:    Mayang Murni Adnin
+source:	   http://www.mayang.com/textures/
+license:   see below, verbatim from the website.
+
+"License
+These textures are Copyright © Mayang Murni Adnin, 2001-2006. They have all been taken by our own cameras or created by ourselves.
+Use:
+They are free to use for all uses, whether commercial or non-commercial (you may incorporate them into your derived work with no requirement to pay us any licensing fee etc). Your derived work must involve significant modification to the textures. It would be nice if you could credit us.
+Sell:
+You may not sell any of these textures in an unmodified form, or any derived works where the product you are selling is still a texture and is likely to compete with this website.
+Redistribute:
+You may redistribute (give/send to somebody else/display on a web site) up to 30 of these textures together, but no more. You must credit this website as the original source (tell them about us)."
+
+
+filename:  ijsbloemen.jpg
+author:    Peter van Ginneken
+license:   PD (Public Domain)
+source:    n/a - original work for The Butterfly Effect
+
+filename:  blue-snow-ice.jpg
+author:    Peter van Ginneken
+license:   PD (Public Domain)
+source:    n/a - original work for The Butterfly Effect
+

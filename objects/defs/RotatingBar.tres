@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+type_name = "RotatingBar"
+display_name = "Rotating Bar"
+tooltip = "This wooden bar rotates around its center."
+category = "Blocks"
+image = "rotating_bar"
+z_value = 2.0
+shape = 2
+width = 1.0
+height = 0.12
+mass = 4.0
+bounciness = 0.4
+friction = 0.3
+polygons = Array[PackedVector2Array]([PackedVector2Array(-0.5, 0.06, -0.5, -0.06, 0.5, -0.06, 0.5, 0.06)])
+has_pivot = true
+pivot = Vector2(0.0, 0.0)
+resizable = "none"

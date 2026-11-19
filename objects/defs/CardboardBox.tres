@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+type_name = "CardboardBox"
+display_name = "Cardboard Box"
+tooltip = "Cardboard boxes are used to carry small and light things around."
+category = "Blocks"
+image = "CardboardBox"
+z_value = 4.0
+shape = 2
+width = 0.9
+height = 0.78809
+mass = 0.5
+bounciness = 0.06
+friction = 0.3
+polygons = Array[PackedVector2Array]([PackedVector2Array(-0.45, -0.394045, -0.39375, -0.394045, -0.39375, 0.394045, -0.45, 0.394045), PackedVector2Array(0.39375, -0.394045, 0.45, -0.394045, 0.45, 0.394045, 0.39375, 0.394045), PackedVector2Array(-0.39375, -0.394045, -0.39375, -0.34478937499999995, 0.39375, -0.34478937499999995, 0.39375, -0.394045)])
+resizable = "none"

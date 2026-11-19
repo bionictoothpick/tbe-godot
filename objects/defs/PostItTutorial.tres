@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/behaviors/postit.gd" id="2"]
+
+[resource]
+script = ExtResource("1")
+type_name = "PostItTutorial"
+display_name = "Tutorial Note"
+tooltip = "Click me!"
+category = "Notes"
+image = "PostItTutorial"
+z_value = 10.0
+shape = 3
+width = 0.22
+height = 0.22
+mass = 0.0
+bounciness = 0.1
+friction = 0.3
+no_collision = true
+resizable = "none"
+behavior = ExtResource("2")

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+type_name = "DominoBlue"
+display_name = "Domino (Blue)"
+tooltip = "A blue plastic domino, it can be toppled with ease."
+category = "Dominoes"
+image = "DominoBlue"
+z_value = 2.0
+shape = 0
+width = 0.1
+height = 0.5
+mass = 2.5
+bounciness = 0.1
+friction = 0.3
+resizable = "none"

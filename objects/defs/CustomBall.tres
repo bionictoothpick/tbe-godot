@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+type_name = "CustomBall"
+display_name = "Ball"
+tooltip = "A ball."
+category = "Balls"
+image = "CustomBall"
+z_value = 2.0
+shape = 1
+width = 0.2
+height = 0.2
+mass = 1.0
+bounciness = 0.3
+friction = 0.3
+resizable = "none"

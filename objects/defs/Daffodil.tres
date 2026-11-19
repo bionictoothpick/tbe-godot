@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+type_name = "Daffodil"
+display_name = "Daffodil"
+tooltip = "Daffodil (Narcissus Flappus Attractus):\nButterflies want to fly there."
+category = "Fixed"
+image = "Anonymous_daffodil_klaas"
+z_value = 1.2
+shape = 2
+width = 0.4
+height = 0.9
+mass = 0.0
+bounciness = 0.1
+friction = 0.05
+polygons = Array[PackedVector2Array]([PackedVector2Array(-0.2, 0.31229999999999997, -0.2, 0.108, -0.0564, 0.0171, 0.1552, 0.0549, 0.2, 0.333, 0.0088, 0.45, -0.18000000000000002, 0.35190000000000005)])
+resizable = "none"

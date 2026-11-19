@@ -1,0 +1,7 @@
+# Godot projects use LF line endings everywhere
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.JPG binary
+*.bmp binary
+*.ico binary

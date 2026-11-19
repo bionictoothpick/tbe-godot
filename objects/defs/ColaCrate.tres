@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+type_name = "ColaCrate"
+display_name = "Cola Crate"
+tooltip = "A crate of 12 filled cola bottles.\nIt's very heavy and hard to push around."
+category = "Blocks"
+image = "cola-crate"
+z_value = 2.0
+shape = 0
+width = 0.85
+height = 0.6
+mass = 18.0
+bounciness = 0.1
+friction = 0.1
+resizable = "none"

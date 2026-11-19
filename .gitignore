@@ -1,0 +1,10 @@
+# Godot cache (rebuilt automatically)
+.godot/
+# Exported builds
+/build/
+/export/
+*.pck
+*.exe
+*.zip
+*.wasm
+*.tmp

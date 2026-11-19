@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+type_name = "WoodCrateSquare"
+display_name = "Square Wooden Crate"
+tooltip = "A heavy wooden crate, great for stacking."
+category = "Blocks"
+image = "wood_crate_square"
+z_value = 2.0
+shape = 0
+width = 0.7
+height = 0.7
+mass = 6.0
+bounciness = 0.1
+friction = 0.3
+resizable = "none"

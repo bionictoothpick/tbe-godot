@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/behaviors/sharp.gd" id="2"]
+
+[resource]
+script = ExtResource("1")
+type_name = "CircularSaw"
+display_name = "Circular Saw"
+tooltip = "A light rotating disc with sharp teeth,\ndangerous for balloons and penguins alike."
+category = "Dangerous"
+image = "CircularSaw"
+z_value = 2.0
+shape = 1
+width = 0.38
+height = 0.38
+mass = 0.4
+bounciness = 0.1
+friction = 0.3
+has_pivot = true
+resizable = "none"
+behavior = ExtResource("2")
+extra = {"Spin": "true"}

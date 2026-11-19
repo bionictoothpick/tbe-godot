@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/behaviors/dynamite.gd" id="2"]
+
+[resource]
+script = ExtResource("1")
+type_name = "Dynamite"
+display_name = "Dynamite"
+tooltip = "Dynamite with a phone-activated fuse.\nWhen its detonator box is pushed, it explodes."
+category = "Machines"
+image = "Dynamite;DynamiteRinging;DynamiteActive;DynamiteBoom;Empty"
+z_value = 2.0
+shape = 2
+width = 0.43
+height = 0.32
+mass = 0.8
+bounciness = 0.1
+friction = 0.3
+polygons = Array[PackedVector2Array]([PackedVector2Array(-0.215, -0.16, 0.215, -0.16, 0.215, 0.02, -0.15, 0.16, -0.215, 0.16)])
+resizable = "none"
+behavior = ExtResource("2")

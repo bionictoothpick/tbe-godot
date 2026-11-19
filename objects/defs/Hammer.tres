@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+type_name = "Hammer"
+display_name = "Hammer"
+tooltip = "This is a hammer which has been attached\nto the scene at the end of its handle.\nThe hammer can be used to apply a force\nto some of the heavier objects."
+category = "Blocks"
+image = "hammer"
+z_value = 2.0
+shape = 0
+width = 0.45
+height = 0.18
+mass = 2.0
+bounciness = 0.0
+friction = 0.0
+has_pivot = true
+pivot = Vector2(0.2, 0.0)
+resizable = "none"

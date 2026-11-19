@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+type_name = "IBeam"
+display_name = "Steel I-Beam"
+tooltip = "Steel I-beams are large and heavy\nand useful to build bridges and other constructions."
+category = "Blocks"
+image = "i-beam"
+z_value = 2.0
+shape = 0
+width = 1.4
+height = 0.1
+mass = 27.0
+bounciness = 0.0
+friction = 0.3
+resizable = "none"

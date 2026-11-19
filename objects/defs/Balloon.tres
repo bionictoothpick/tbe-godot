@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/behaviors/balloon.gd" id="2"]
+
+[resource]
+script = ExtResource("1")
+type_name = "Balloon"
+display_name = "Helium Balloon"
+tooltip = "A helium balloon. Lighter than air, it moves up.\nIt will pop when it hits sharp objects or gets squashed."
+category = "Characters"
+image = "Balloon;BalloonPoof;BalloonRest;Empty"
+z_value = 2.0
+shape = 2
+width = 0.27
+height = 0.36
+mass = 0.1
+bounciness = 0.7
+friction = 0.3
+polygons = Array[PackedVector2Array]([PackedVector2Array(-0.018692307692307692, 0.18514285714285716, -0.07269230769230771, 0.1645714285714286, -0.12461538461538463, 0.10285714285714287, -0.135, 0.01748571428571429, -0.10384615384615387, -0.0822857142857143, -0.031153846153846157, -0.1645714285714286, 0.0062307692307692316, -0.17485714285714288, 0.0405, -0.1645714285714286, 0.10384615384615387, -0.0822857142857143, 0.135, 0.01542857142857143, 0.11423076923076925, 0.11314285714285716, 0.07269230769230771, 0.1645714285714286, 0.010384615384615386, 0.18514285714285716)])
+resizable = "none"
+behavior = ExtResource("2")

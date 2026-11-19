@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/behaviors/sharp.gd" id="2"]
+
+[resource]
+script = ExtResource("1")
+type_name = "Cactus"
+display_name = "Cactus"
+tooltip = "Cactus (Cactacea Bulbuous Stingus):\nA cactus has sharp spines."
+category = "Dangerous"
+image = "Cactus"
+z_value = 2.0
+shape = 2
+width = 0.25
+height = 0.4
+mass = 1.0
+bounciness = 0.3
+friction = 0.3
+polygons = Array[PackedVector2Array]([PackedVector2Array(-0.105, -0.038, -0.05, -0.2, 0.05, -0.2, 0.105, -0.038), PackedVector2Array(0.045, -0.036, 0.085, 0.012, 0.092, 0.089, 0.046, 0.156, 0.0, 0.171, -0.046, 0.156, -0.092, 0.089, -0.085, 0.012, -0.045, -0.036)])
+resizable = "none"
+behavior = ExtResource("2")
+extra = {"SharpAbove": "-0.036"}

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+type_name = "SoccerBall"
+display_name = "Soccer Ball"
+tooltip = "A soccer ball is of medium weight and pretty bouncy."
+category = "Balls"
+image = "SoccerBall"
+z_value = 2.0
+shape = 1
+width = 0.22
+height = 0.22
+mass = 0.43
+bounciness = 0.56
+friction = 0.3
+resizable = "none"

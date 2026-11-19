@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+type_name = "Skyhook"
+display_name = "Skyhook"
+tooltip = "A skyhook just hangs in the air. And you can hang a lot of weight on it!"
+category = "Fixed"
+image = "Skyhook"
+z_value = 1.0
+shape = 2
+width = 0.2
+height = 0.23
+mass = 0.0
+bounciness = 0.4
+friction = 0.3
+polygons = Array[PackedVector2Array]([PackedVector2Array(-0.03, -0.07000000000000002, 0.01, -0.11000000000000003, 0.05, -0.11000000000000003, 0.1, -0.05000000000000002, 0.1, -0.020000000000000004, 0.08, 0.0, -0.02, -0.030000000000000006)])
+resizable = "none"

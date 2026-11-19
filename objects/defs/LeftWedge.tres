@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+type_name = "LeftWedge"
+display_name = "Left Birch Wedge"
+tooltip = "Birch wedges can be moved and are rather heavy.\nThe left is lower than the right, so things slide to the left."
+category = "Ramps"
+image = "birch-wedge-left"
+z_value = 2.0
+shape = 2
+width = 1.0
+height = 1.0
+mass = 2.0
+bounciness = 0.2
+friction = 0.3
+polygons = Array[PackedVector2Array]([PackedVector2Array(-0.5, -0.46, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5)])
+resizable = "none"

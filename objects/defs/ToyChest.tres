@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+type_name = "ToyChest"
+display_name = "Toy Chest"
+tooltip = "Most people use a chest to keep things."
+category = "Fixed"
+image = "toychest"
+z_value = 3.0
+shape = 2
+width = 1.0
+height = 1.7
+mass = 0.0
+bounciness = 0.05
+friction = 0.3
+polygons = Array[PackedVector2Array]([PackedVector2Array(-0.5108695652173914, -0.85, -0.4347826086956523, -0.85, -0.4347826086956523, -0.10365853658536586, -0.5108695652173914, -0.08292682926829269), PackedVector2Array(0.3260869565217392, -0.85, 0.4347826086956523, -0.85, 0.4347826086956523, -0.08292682926829269, 0.3260869565217392, -0.10365853658536586), PackedVector2Array(0.4347826086956523, -0.08292682926829269, 0.48913043478260876, 0.0, 0.48913043478260876, 0.18658536585365854, 0.4130434782608696, 0.46646341463414637, 0.21739130434782614, 0.7774390243902439, 0.13043478260869568, 0.8292682926829269, 0.04347826086956522, 0.85), PackedVector2Array(-0.4347826086956523, -0.85, 0.3260869565217392, -0.85, 0.3260869565217392, -0.7567073170731707, -0.4347826086956523, -0.7567073170731707)])
+resizable = "none"

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ObjectDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/object_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+type_name = "PegMetal"
+display_name = "Metal Peg"
+tooltip = "A round obstacle, pinned to the sky.\nThings will bounce off heavily."
+category = "Fixed"
+image = "brass-pin"
+z_value = 2.0
+shape = 1
+width = 0.14
+height = 0.14
+mass = 0.0
+bounciness = 0.7
+friction = 0.3
+resizable = "none"
