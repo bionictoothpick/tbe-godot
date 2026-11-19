@@ -113,6 +113,15 @@ Add `isFail="true"` to a goal to make it a losing condition.
 
 All test tools use a throw-away save, so they never touch your real progress.
 
+**Input diagnostics** (off by default) help track down mouse problems. They log every
+click the play screen receives to `input_log.txt`, and save a screenshot to `diag/`
+each time an item is dropped, both in the game's user-data folder. Turn them on in
+*Project Settings → Tbe → Debug → Input Diagnostics*, or start the game with:
+
+```
+godot --path . -- --input-diagnostics
+```
+
 To run the headless check:
 
 ```

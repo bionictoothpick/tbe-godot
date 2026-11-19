@@ -53,9 +53,18 @@ func _mouse_world() -> Vector2:
 	return get_viewport().get_canvas_transform().affine_inverse() * _mouse_screen
 
 
-## Small log of mouse handling (user://input_log.txt), to diagnose input
-## problems on other machines. Rewritten every time the game starts.
+## Input diagnostics, off by default. When on, the game writes a log of mouse
+## handling to user://input_log.txt (rewritten at each start) and saves a
+## screenshot to user://diag/ whenever an item is dropped (last 8 kept).
+## Turn on with Project Settings > Tbe > Debug > Input Diagnostics, or by
+## starting the game with:  godot --path . -- --input-diagnostics
+var diagnostics: bool = bool(ProjectSettings.get_setting("tbe/debug/input_diagnostics", false)) \
+		or "--input-diagnostics" in OS.get_cmdline_user_args()
+
+
 func _log(msg: String) -> void:
+	if not diagnostics:
+		return
 	if _input_log == null:
 		_input_log = FileAccess.open("user://input_log.txt", FileAccess.WRITE)
 	if _input_log:
@@ -69,6 +78,8 @@ var _motion_n := 0
 
 ## Saves what the window shows to user://diag/ (last 8 kept), for diagnosis.
 func _diag_shot(tag: String) -> void:
+	if not diagnostics:
+		return
 	await RenderingServer.frame_post_draw
 	DirAccess.make_dir_recursive_absolute("user://diag")
 	_shot_n += 1
