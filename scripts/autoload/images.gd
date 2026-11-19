@@ -48,6 +48,9 @@ func all_names() -> Array:
 func get_texture(image_name: String, max_px: float = 256.0) -> Texture2D:
 	if not _paths.has(image_name):
 		return null
+	# The window stretches everything (canvas_items mode), so rasterize for the
+	# real on-screen pixel size, not the logical one, to keep SVGs crisp.
+	max_px *= screen_scale()
 	var path: String = _paths[image_name]
 	if not path.ends_with(".svg"):
 		var key_r := image_name
@@ -63,6 +66,14 @@ func get_texture(image_name: String, max_px: float = 256.0) -> Texture2D:
 	var tex := _rasterize_svg(image_name, path, bucket)
 	_cache[key] = tex
 	return tex
+
+
+## How many real screen pixels one logical pixel covers (1.0 at 1280x800).
+func screen_scale() -> float:
+	var root := get_tree().root if is_inside_tree() else null
+	if root == null:
+		return 1.0
+	return maxf(1.0, root.get_final_transform().get_scale().x)
 
 
 func _rasterize_svg(image_name: String, path: String, bucket: int) -> Texture2D:

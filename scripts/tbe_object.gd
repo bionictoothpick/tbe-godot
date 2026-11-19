@@ -33,6 +33,7 @@ var _dead_mat: PhysicsMaterial
 ## (World._update_bounce applies it.)
 const BOUNCE_THRESHOLD := 1.0   # m/s
 var _tex_px := 256.0
+var _tex_scale := 1.0
 
 
 func setup(a_def: ObjectDef, a_spec: Dictionary) -> void:
@@ -306,8 +307,10 @@ func set_size_m(new_size: Vector2) -> void:
 
 func set_texture_detail(px_per_m_on_screen: float) -> void:
 	var want := maxf(size_m.x, size_m.y) * px_per_m_on_screen * 1.25
-	if absf(want - _tex_px) > _tex_px * 0.4:
+	var sc: float = Images.screen_scale()
+	if absf(want - _tex_px) > _tex_px * 0.4 or absf(sc - _tex_scale) > _tex_scale * 0.25:
 		_tex_px = want
+		_tex_scale = sc
 		queue_redraw()
 
 
