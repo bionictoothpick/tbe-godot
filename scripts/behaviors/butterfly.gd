@@ -67,5 +67,6 @@ func on_explosion(_s: float) -> void:
 
 func _die() -> void:
 	body.set_state(DEAD)
+	Sfx.play("squish")
 	body.modulate = Color(0.6, 0.6, 0.6)
 	world.object_died(body, "The butterfly got hurt!")

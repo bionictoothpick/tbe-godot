@@ -22,6 +22,7 @@ Images="*res://scripts/autoload/images.gd"
 Catalog="*res://scripts/autoload/catalog.gd"
 Progress="*res://scripts/autoload/progress.gd"
 Levels="*res://scripts/autoload/levels.gd"
+Sfx="*res://scripts/autoload/sfx.gd"
 
 [display]
 

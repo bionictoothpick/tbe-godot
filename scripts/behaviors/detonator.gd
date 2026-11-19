@@ -25,6 +25,7 @@ func physics_tick(delta: float) -> void:
 		return
 	if body.state == ACTIVATED:
 		body.set_state(RINGING)
+		Sfx.play("ring", 0.7)
 		_timer = 0.5
 		world.ring_phone(str(TBE.prop(body.props, "PhoneNumber", "")))
 	elif body.state == RINGING:

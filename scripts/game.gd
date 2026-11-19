@@ -19,6 +19,7 @@ var ui: CanvasLayer
 var toolbox_box: VBoxContainer
 var play_btn: Button
 var fast_btn: Button
+var sound_btn: Button
 var status_label: Label
 var hover_label: Label
 var toast_label: Label
@@ -200,6 +201,9 @@ func _build_ui() -> void:
 	bar.add_child(play_btn)
 	fast_btn = _button("⏩ 1×", "Simulation speed", func(): _set_speed(_speed * 2 if _speed < 4 else 1))
 	bar.add_child(fast_btn)
+	sound_btn = _button("", "Sound on/off (M)", func(): _toggle_sound())
+	bar.add_child(sound_btn)
+	_update_sound_btn()
 
 	# --- toolbox panel
 	var side := PanelContainer.new()
@@ -412,6 +416,7 @@ func _show_note(pages: Array, kind: String, page := 0) -> void:
 
 
 func _on_won() -> void:
+	Sfx.play("win")
 	if not Levels.testing:
 		Progress.mark_completed(level_path, snapshot)
 	Progress.save_solution(level_path, snapshot)
@@ -428,6 +433,7 @@ func _on_won() -> void:
 
 
 func _on_failed(reason: String) -> void:
+	Sfx.play("fail")
 	await get_tree().create_timer(0.8, false).timeout
 	_dialog("Oops!", reason + "\n\nReset and try a different idea.",
 			[["Keep watching", _close_dialogs], ["⟲ Reset", _close_and_reset]])
@@ -492,6 +498,15 @@ func _reset() -> void:
 	_rebuild()
 
 
+func _toggle_sound() -> void:
+	Sfx.set_muted(not Sfx.muted)
+	_update_sound_btn()
+
+
+func _update_sound_btn() -> void:
+	sound_btn.text = "🔇" if Sfx.muted else "🔊"
+
+
 func _set_speed(s: int) -> void:
 	_speed = s
 	Engine.time_scale = float(s)
@@ -544,6 +559,7 @@ func _start_toolbox_drag(index: int) -> void:
 	o.set_texture_detail(TBE.PPM * _zoom)
 	_select(o)
 	dragging = o
+	Sfx.play("pick", 0.6)
 	drag_offset = Vector2.ZERO
 	drag_from_toolbox = true
 	carrying = false
@@ -624,6 +640,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		match event.keycode:
 			KEY_SPACE: _toggle_play()
 			KEY_R: _reset()
+			KEY_M: _toggle_sound()
 			KEY_DELETE, KEY_BACKSPACE:
 				if selected and mode == Mode.EDIT:
 					_return_to_toolbox(selected)
@@ -689,6 +706,7 @@ func _end_drag() -> void:
 		return
 	_log("placed %s: mouse %s, object now at screen %s" % [o.def.type_name, screen, _screen_of_obj(o)])
 	_diag_shot("drop")
+	Sfx.play("drop", 0.6)
 	world.mark_dirty()
 	_autosave()
 	await get_tree().physics_frame
@@ -713,6 +731,7 @@ func _return_to_toolbox(o: TbeObject) -> void:
 	if o == dragging:
 		dragging = null
 	world.remove_object(o)
+	Sfx.play("pick", 0.5, 0.7)
 	_refresh_toolbox()
 	_autosave()
 	await get_tree().physics_frame

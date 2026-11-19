@@ -38,6 +38,7 @@ func physics_tick(delta: float) -> void:
 
 func _explode() -> void:
 	body.set_state(BOOM)
+	Sfx.play("boom")
 	_timer = 0.4
 	body.collision_layer = 0
 	body.collision_mask = 0

@@ -23,6 +23,13 @@ var overlapping := false
 var selected := false
 var dead := false
 var simulating := false
+# collision sounds (see _impact_sounds)
+var _touching := {}
+var _prev_v := Vector2.ZERO
+var _hit_v0 := Vector2.ZERO
+var _hit_wait := 0
+var _hit_best := 0.0
+var _hit_other := 0
 
 var tooltip := ""
 var _bouncy_mat: PhysicsMaterial
@@ -219,11 +226,36 @@ func _physics_process(delta: float) -> void:
 
 
 func _integrate_forces(st: PhysicsDirectBodyState2D) -> void:
-	if not simulating or behavior == null:
+	if not simulating:
+		return
+	_impact_sounds(st)
+	if behavior == null:
 		return
 	for i in st.get_contact_count():
 		var imp := st.get_contact_impulse(i).length() / TBE.PPM
 		behavior.on_impact(imp, st.get_contact_collider_object(i), st.get_contact_collider_position(i))
+
+
+## Plays a collision sound when a new contact appears. How hard the hit was
+## is measured by how much this object's velocity changed over the next two
+## steps (Godot reports no impulse on the step a bounce happens).
+func _impact_sounds(st: PhysicsDirectBodyState2D) -> void:
+	var now := {}
+	for i in st.get_contact_count():
+		var id := st.get_contact_collider_id(i)
+		now[id] = true
+		if not _touching.has(id) and _hit_wait == 0:
+			_hit_wait = 2
+			_hit_v0 = _prev_v
+			_hit_other = id
+			_hit_best = 0.0
+	_touching = now
+	_prev_v = st.linear_velocity
+	if _hit_wait > 0:
+		_hit_best = maxf(_hit_best, (st.linear_velocity - _hit_v0).length() / TBE.PPM)
+		_hit_wait -= 1
+		if _hit_wait == 0:
+			Sfx.impact(self, _hit_best, _hit_other)
 
 
 ## True if `other` is a sharp object at point `at`.

@@ -47,6 +47,7 @@ func pop() -> void:
 	if body.state != FLOATING:
 		return
 	body.set_state(POPPING)
+	Sfx.play("pop")
 	_timer = 0.3
 	# the rubber remains are tiny and don't block anything anymore
 	body.collision_layer = 0

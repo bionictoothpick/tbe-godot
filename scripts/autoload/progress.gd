@@ -67,3 +67,15 @@ func _write() -> void:
 	var f := FileAccess.open(FILE, FileAccess.WRITE)
 	if f:
 		f.store_string(JSON.stringify(data, "  "))
+
+
+## Player preferences, such as sound on/off.
+func get_setting(key: String, default: Variant = null) -> Variant:
+	return data.get("settings", {}).get(key, default)
+
+
+func set_setting(key: String, value: Variant) -> void:
+	if not data.has("settings"):
+		data["settings"] = {}
+	data["settings"][key] = value
+	_write()

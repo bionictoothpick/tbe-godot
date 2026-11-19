@@ -22,6 +22,7 @@ Open the folder in Godot 4.7 and press **F5**.
 * To put an item back, **right-click** it, press **Del**, or drag it onto the toolbox.
 * **Space** plays or pauses and **R** resets. **⏩** speeds things up.
 * Click **Post-it notes** to read hints.
+* **🔊** (or **M**) turns sound on or off. The game remembers your choice.
 * Items that overlap turn **red**, and you can't press Play until you fix them.
 * **💾 Save** stores your arrangement, and it comes back automatically the next time
   you open the level. Winning solutions are saved too. Your arrangement is also
@@ -105,10 +106,11 @@ Add `isFail="true"` to a goal to make it a losing condition.
 | `scripts/editor.gd` | The level editor |
 | `scripts/level_data.gd` | Reads/writes the level XML format |
 | `scripts/behaviors/` | Butterfly, balloon, sharp things, cola+mint, dynamite, detonator, notes |
-| `scripts/autoload/` | `Catalog` (objects), `Images` (crisp SVG rendering), `Levels`, `Progress` (saves) |
+| `scripts/autoload/` | `Catalog` (objects), `Images` (crisp SVG rendering), `Levels`, `Progress` (saves), `Sfx` (sounds) |
 | `tools/generate_object_defs.py` | One-off importer of the original C++ object tables |
 | `tools/smoke_test.tscn` | Headless check that loads and simulates every level |
 | `tools/input_test.tscn` | Plays level 2 with real mouse events: drag from toolbox, drag again, right-click back (run windowed) |
+| `tools/sound_test.tscn` | Headless check that every sound is built and that settled levels go quiet |
 | `tools/editor_test.tscn` | Drives the editor end to end: build, goal, toolbox, save, reload, test-play, win (run windowed) |
 
 All test tools use a throw-away save, so they never touch your real progress.
@@ -149,7 +151,15 @@ behaviour:
   levels play as they were designed (see [Known gaps](#known-gaps)).
 
 New in this version: a modern interface, "save my solution", data-driven objects,
-an in-game level editor, and automated tests.
+an in-game level editor, sound effects, and automated tests.
+
+**Sound.** The original game had no sound. The sound effects here are generated in
+code when the game starts (`scripts/autoload/sfx.gd`), so there are no audio files and
+no extra licenses. Objects knock, clink, thud or bounce depending on what they are
+made of. Balloons pop, dynamite booms, the detonator rings, cola fizzes, and a short
+tune plays when you win or lose. To change an object's collision sound, edit the
+`MATERIAL` table in `sfx.gd`, or give the object a `Sound` property (`wood`, `metal`,
+`ball`, `soft` or `none`) in the level editor.
 
 ## Credits
 

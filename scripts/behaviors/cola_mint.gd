@@ -37,6 +37,7 @@ func physics_tick(_delta: float) -> void:
 			_countdown -= 1
 			if _countdown <= 0:
 				body.set_state(BLOWING)
+				Sfx.play("fizz", 0.8)
 		BLOWING:
 			_blow()
 
